@@ -38,8 +38,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent based on state space with 37 informations.
 
-![image1] (https://github.com/dgiunchi/DeepReinforcementLearningND_Navigation/blob/master/chartDQN.png)
-
+[![chart DQN](https://github.com/dgiunchi/DeepReinforcementLearningND_Navigation/blob/master/chartDQN.png)](#training)
 
 ### (Optional) Challenge: Learning from Pixels
 
