@@ -32,13 +32,15 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
-        self.modelName = modeltype.__name__
+        self.modelname = modeltype.__name__
 
         # Q-Network
         self.qnetwork_local = modeltype(state_size, action_size, seed).to(device)
         self.qnetwork_target = modeltype (state_size, action_size, seed).to(device)
         self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
 
+        print(self.qnetwork_local)
+        
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
         # Initialize time step (for updating every UPDATE_EVERY steps)
