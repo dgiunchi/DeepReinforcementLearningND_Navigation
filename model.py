@@ -80,7 +80,7 @@ class DuelingDQNetworkConv(nn.Module):
             action_size (int): Dimension of each action
             seed (int): Random seed
         """
-        super(QNetworkDuellingCNN, self).__init__()
+        super(DuelingDQNetworkConv, self).__init__()
         self.seed = torch.manual_seed(seed)
         "*** YOUR CODE HERE ***"
         
